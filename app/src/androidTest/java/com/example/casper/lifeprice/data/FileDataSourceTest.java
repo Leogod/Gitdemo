@@ -12,7 +12,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FileDataSourceTest {
-    FileDataSource keeper;
+   FileDataSource keeper;
     @Before
     public void setUp() throws Exception {
         keeper=new FileDataSource(InstrumentationRegistry.getTargetContext());
@@ -63,6 +63,7 @@ public class FileDataSourceTest {
         fileDataSource.save();
         FileDataSource fileloader=new  FileDataSource(InstrumentationRegistry.getTargetContext());
         fileloader.load();
+
 
         assertEquals(fileDataSource.getGoods().size(),fileloader.getGoods().size());
         //assertNotEquals(fileDataSource.getGoods(),fileloader.getGoods());

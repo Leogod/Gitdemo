@@ -193,7 +193,8 @@ public class LifePriceMainActivity extends AppCompatActivity {
         fileDataSource=new FileDataSource(this);
         theGoods=fileDataSource.load();
         if(theGoods.size()==0) {
-            theGoods.add(new Good("目前没有鱼", 1, R.drawable.a1));
+            theGoods.add(new Good("目前没有鱼1", 1, R.drawable.a1));
+            theGoods.add(new Good("目前没有鱼2", 1, R.drawable.a1));
         }
     }
 
